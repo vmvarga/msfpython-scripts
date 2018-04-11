@@ -60,7 +60,7 @@ while global_console_status:
     time.sleep(5)
 time.sleep(5)
 
-targets = []
+targets = list()
 for line in global_positive_out:
     if 'FreeFloat' in line:
     	ip = re.findall(r'[0-9]+(?:\.[0-9]+){3}', line)[0]
